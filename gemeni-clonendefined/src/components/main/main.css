@@ -1,0 +1,133 @@
+.main{
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+}
+
+.main .nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-size: 22px;
+padding: 20px;
+color: #585858;
+font-weight: 700;
+}
+
+.main .nav img{
+ 
+    width: 40px;
+    border-radius: 50%;
+}
+
+.main-container{
+    max-width: 900px;
+    margin: auto;
+}
+
+ .main .greet{
+    margin: 50px Opx;
+    font-size: 56px;
+    color:#c4c7c5 ;
+    
+    font-weight: 500;
+    padding: 20px;
+ }
+
+ .main .greet span{
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+ }
+
+ .main .cards{
+
+display: flex;
+grid-template-columns: repeat(auto-fi11,minmax(180px,1fr));
+gap: 15px;
+padding: 20px;
+
+}
+
+.main .card{
+    height: 200px;
+    padding: 15px;
+    background-color: #f0f4f9;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.main .card img{
+width: 35px;
+padding: 5px;
+position: absolute;
+background-color:white;
+border-radius: 20px;
+bottom: 10px;
+right: 10px;
+}
+
+.main .card:hover{
+    background-color: #dfe4ea;
+}
+
+.main-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color:#f0f4f9;
+    padding: 10px 20px;
+    border-radius: 50px;
+    }
+    .search-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%; /* Ensure it takes full width */
+        max-width: 800px; /* Limit max width */
+        gap: 10px; /* Reduce gap */
+        background-color: #f0f4f9;
+        padding: 10px 20px;
+        border-radius: 50px;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    
+    .search-box input {
+        flex: 1; /* Makes input take available space */
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 16px;
+        color: #333;
+        padding: 10px;
+    }
+    
+    .search-box div {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Adjust spacing between icons */
+    }
+    
+    .search-box img {
+        width: 20px;
+        cursor: pointer;
+    }
+    
+    .bottom-info{
+        margin-bottom: 10px;
+        margin-left: 60px;
+    }
