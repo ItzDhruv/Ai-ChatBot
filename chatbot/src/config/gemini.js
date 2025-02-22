@@ -1,9 +1,9 @@
 
-const {
+import {
     GoogleGenerativeAI,
     HarmCategory,
     HarmBlockThreshold,
-  } = require("@google/generative-ai");
+  }  from "@google/generative-ai";
   
   const apiKey = "AIzaSyC43-eU63b5zuI7ZsOrcJGoDtKMr2VzMjU"
   const genAI = new GoogleGenerativeAI(apiKey);
@@ -28,7 +28,9 @@ const {
     });
   
     const result = await chatSession.sendMessage(prompt);
+    const response = result.response
     console.log(result.response.text());
+    return response.text();
   }
   
 export default run

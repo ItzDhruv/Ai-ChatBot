@@ -9,3 +9,8 @@
   min-height: 100vh;
   display: flex;
 }
+
+.main-component{
+  display: flex;
+}
+
