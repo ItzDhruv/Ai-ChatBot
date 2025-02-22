@@ -18,7 +18,7 @@ const sidebar = () => {
     <div className="top">
 
     <img onClick={() =>setextend(prev=>!prev)} className='menu' src={assets.menu_icon} alt="" />
-    <div className="newchat">
+    <div className="newchat" onClick={() => window.location.reload()}>
         <img src={assets.plus_icon} alt="" />
         {extend?<p>New chat</p>:null}
     </div>
@@ -29,7 +29,7 @@ const sidebar = () => {
         
         {prevPrompts.map((item, index) => {
     return (
-        <div onClick={() => loadPromt(item)} className="recent-entry">
+        <div onClick={() => loadPromt(item)} className="recent-entry" key={index}>
             <img src={assets.message_icon} alt="" />
             
             <p>{item.slice(0,20)} ....</p>
