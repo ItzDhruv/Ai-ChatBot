@@ -142,6 +142,13 @@ right: 10px;
         overflow-y: scroll;
     }
 
+    .wallet-message{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
     #Gimini-title{
         font-size:50px;
     }

@@ -1,18 +1,21 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./main.css";
 import { assets } from "../../assets/gemini-clone-assets/assets/assets";
 import { Context } from "../../context/context";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { useAccount } from "wagmi";
 const main = () => {
   const {onSent, recentPrompt, showResult, loading, resultData, setInput, input} = useContext(Context)
-
+ 
+  const { isConnected, address } = useAccount();
+  
   return (
     <div className="main">
       <div className="nav">
         <p id="Gimini-title">Gimini</p>
         <div className="connect-wallet"> 
 
-        <ConnectButton label="Sign in"   />
+        <ConnectButton label="Sign in" />
         </div>
         <img src={assets.user_icon} alt="" />
       </div>
@@ -65,7 +68,10 @@ const main = () => {
                 </div>}
         
         <div className="main-bottom">
-          <div className="search-box">
+          
+
+          
+            {isConnected ? <div className="search-box">
             <input  onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder=" Enter a prompt here" onKeyDown={(e) => {   if (e.key === "Enter") { onSent()   }}}></input>
             <div> 
 
@@ -73,7 +79,8 @@ const main = () => {
               <img src={assets.mic_icon} alt="" />
               <img onClick={() => onSent()} src={assets.send_icon} alt="" />
             </div>
-          </div>
+          </div> : <h1 className="wallet-message">⚠️ Connect your wallet first</h1> }
+          
           <p className="bottom-info">
           ©  If it is easy, Everybody can do it. - "Dhruv"       
           </p>
