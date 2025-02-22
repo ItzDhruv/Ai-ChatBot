@@ -9,9 +9,22 @@ DhulAi is a React-based decentralized AI-powered chat application that ensures p
 - **Real-Time Interaction**: Ensures smooth and engaging communication.
 - **User-Friendly Interface**: Intuitive design for easy navigation.
 
-## Demo Image
+## Live Demo
 
-![img alt](https://github.com/yourusername/DhulAi/blob/main/docs/demo-image.png)
+Visit the live application: [DhulAi](https://ai-chat-r2ezpmrk0-dhruvs-projects-91859a0e.vercel.app/)
+
+## Demo Images
+
+## Home Page
+
+![img alt](chatbot/Demo3.png)
+
+## Chat Home Page
+
+![img alt](chatbot/Demo2.png)
+
+## Chat Search Ui
+![img alt](chatbot/Demo1.png)
 
 ## How to Clone and Run the Project
 
@@ -70,5 +83,5 @@ We welcome contributions! Please submit a pull request or open an issue if you h
 This project is licensed under the MIT License.
 
 ## Contact
-For any inquiries, reach out to [your email or contact info].
+For any inquiries, reach out to dhruvdobariya897@gmail.com
 
