@@ -71,7 +71,7 @@ Ensure that you have the following installed on your machine:
      yarn dev
      ```
 
-The application will be available at `http://localhost:3000`.
+The application will be available at `http://localhost:3000` or your Default Port.
 
 ## Deployment
 To deploy DhulAi, follow your preferred cloud service's deployment process, such as Vercel, Netlify, or a custom server setup.
