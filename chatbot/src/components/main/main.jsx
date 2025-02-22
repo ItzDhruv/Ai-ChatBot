@@ -12,7 +12,7 @@ const main = () => {
   return (
     <div className="main">
       <div className="nav">
-        <p id="Gimini-title">Gimini</p>
+        <p id="Gimini-title">DhulAi</p>
         <div className="connect-wallet"> 
 
         <ConnectButton label="Sign in" />

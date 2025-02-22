@@ -5,12 +5,16 @@ import { Context } from '../../context/context'
 const sidebar = () => {
 
     const [extend , setextend] = useState(false)
-    const {onSent, prevPrompts, setRecentPrompt}= useContext(Context)
+    const { onSent, prevPrompts, setRecentPrompt, setPrevPrompts } = useContext(Context);
 
-    const loadPromt = async (prompt) =>{
-        setRecentPrompt(prompt)
-        await onSent(prompt)
-    }
+    const loadPromt = async (prompt) => {
+        if (!prevPrompts.includes(prompt)) {  
+            setPrevPrompts([...prevPrompts, prompt]);  // Add only if not present
+        }
+        setRecentPrompt(prompt);
+        await onSent(prompt);
+    };
+    
   return (
   <>
   <div className="sidebar">
