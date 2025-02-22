@@ -68,13 +68,14 @@ const main = () => {
           <div className="search-box">
             <input  onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder=" Enter a prompt here" onKeyDown={(e) => {   if (e.key === "Enter") { onSent()   }}}></input>
             <div> 
+
               <img src={assets.gallery_icon} alt="" />
               <img src={assets.mic_icon} alt="" />
               <img onClick={() => onSent()} src={assets.send_icon} alt="" />
             </div>
           </div>
           <p className="bottom-info">
-          Gemini may display inaccurate info, including about people, so double-check its privacy and Gemini Apps            
+          ©  If it is easy, Everybody can do it. - "Dhruv"       
           </p>
         </div>
       </div>
