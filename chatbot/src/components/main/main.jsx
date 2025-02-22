@@ -9,10 +9,10 @@ const main = () => {
   return (
     <div className="main">
       <div className="nav">
-        <p>Gimini</p>
-        <div className="connect-wallet">
+        <p id="Gimini-title">Gimini</p>
+        <div className="connect-wallet"> 
 
-        <ConnectButton />
+        <ConnectButton label="Sign in"   />
         </div>
         <img src={assets.user_icon} alt="" />
       </div>

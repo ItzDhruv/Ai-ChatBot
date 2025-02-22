@@ -141,6 +141,10 @@ right: 10px;
         max-height: 70vh;
         overflow-y: scroll;
     }
+
+    #Gimini-title{
+        font-size:50px;
+    }
        
         .result::-webkit-scrollbar{
         display: none;
