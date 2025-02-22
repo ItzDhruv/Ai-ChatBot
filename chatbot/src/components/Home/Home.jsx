@@ -4,7 +4,7 @@ import "./Home.css";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount } from "wagmi"
 import LearnMore from "./LearnMore";
-
+import { assets } from "../../assets/gemini-clone-assets/assets/assets";
 
 const Home = () => {
   
@@ -54,7 +54,7 @@ const Home = () => {
         </div>
       </div>
       <div id="hero-image">
-        <img src="./../../assert/AppLogo.png" alt="Mobile Development Illustration" />
+        <img src={assets.user_icon} alt="Img" />
       </div>
     </div>
   </div>
