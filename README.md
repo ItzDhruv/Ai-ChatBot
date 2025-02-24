@@ -77,7 +77,7 @@ The application will be available at `http://localhost:3000` or your Default Por
 To deploy DhulAi, follow your preferred cloud service's deployment process, such as Vercel, Netlify, or a custom server setup.
 
 ## Contributing
-We welcome contributions! Please submit a pull request or open an issue if you have suggestions or improvements.
+We welcome contributions! Please submit a pull request or open an issue if you have suggestions or improvements
  
 ## License
 This project is licensed under the MIT License.
